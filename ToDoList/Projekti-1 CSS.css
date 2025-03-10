@@ -1,0 +1,59 @@
+/* styles.css */
+
+/* Yleinen tyyli */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+/* Kontainerin tyylit */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+/* Lomake-elementtien tyylit */
+input, button, select {
+    width: 96%;
+    padding: 10px;
+    margin-top: 10px;
+}
+/* "Lisää"-napin tyylit */
+button {
+    background-color: #2878a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #213488;
+}
+/* Tehtävälistan tyylit */
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+/* Valmiiden tehtävien tyylit */
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+/* Napit tehtävien merkitsemiseen ja poistamiseen */
+button.complete {
+    background-color: #00ff22;
+}
+button.delete {
+    background-color: #dc3545;
+}
